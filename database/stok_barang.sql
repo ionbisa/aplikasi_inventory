@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.2
+-- version 5.1.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 30 Jul 2020 pada 03.35
--- Versi server: 10.4.11-MariaDB
--- Versi PHP: 7.4.6
+-- Generation Time: Jul 02, 2022 at 07:35 PM
+-- Server version: 10.4.19-MariaDB
+-- PHP Version: 7.3.28
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,7 +24,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `ci_sessions`
+-- Table structure for table `ci_sessions`
 --
 
 CREATE TABLE `ci_sessions` (
@@ -35,7 +35,7 @@ CREATE TABLE `ci_sessions` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `ci_sessions`
+-- Dumping data for table `ci_sessions`
 --
 
 INSERT INTO `ci_sessions` (`id`, `ip_address`, `timestamp`, `data`) VALUES
@@ -145,12 +145,32 @@ INSERT INTO `ci_sessions` (`id`, `ip_address`, `timestamp`, `data`) VALUES
 ('p6q41rqap0vga7nkdvababu1l89lastb', '::1', 1596071126, 0x5f5f63695f6c6173745f726567656e65726174657c693a313539363037313132363b5573657249447c733a313a2232223b557365727c733a373a2250656761776169223b6c6576656c7c733a373a2270656761776169223b666f746f7c733a31383a22666f746f313539353035373739372e4a5047223b),
 ('6fen769eagko4ggpe4qfb0bt5aqmoauq', '::1', 1596071434, 0x5f5f63695f6c6173745f726567656e65726174657c693a313539363037313433343b5573657249447c733a313a2232223b557365727c733a373a2250656761776169223b6c6576656c7c733a373a2270656761776169223b666f746f7c733a31383a22666f746f313539353035373739372e4a5047223b),
 ('bv5id8mmgfsgnqa0l697g1hrtmf70bq2', '::1', 1596072457, 0x5f5f63695f6c6173745f726567656e65726174657c693a313539363037323435373b5573657249447c733a313a2232223b557365727c733a373a2250656761776169223b6c6576656c7c733a373a2270656761776169223b666f746f7c733a31383a22666f746f313539363037313436392e706e67223b),
-('tnuhq8o7le2n5iklne0cf3gb81f2ofa9', '::1', 1596072574, 0x5f5f63695f6c6173745f726567656e65726174657c693a313539363037323435373b5573657249447c733a313a2232223b557365727c733a373a2250656761776169223b6c6576656c7c733a373a2270656761776169223b666f746f7c733a31383a22666f746f313539363037313436392e706e67223b);
+('tnuhq8o7le2n5iklne0cf3gb81f2ofa9', '::1', 1596072574, 0x5f5f63695f6c6173745f726567656e65726174657c693a313539363037323435373b5573657249447c733a313a2232223b557365727c733a373a2250656761776169223b6c6576656c7c733a373a2270656761776169223b666f746f7c733a31383a22666f746f313539363037313436392e706e67223b),
+('g5th2ol1120ebudfb1urrb9ppd5knda7', '::1', 1655105675, 0x5f5f63695f6c6173745f726567656e65726174657c693a313635353130353637353b5573657249447c733a313a2231223b557365727c733a31333a2241646d696e6973747261746f72223b6c6576656c7c733a353a2261646d696e223b666f746f7c733a31383a22666f746f313539363031373834372e706e67223b),
+('am64dnhtet0479llf6lh79jc35rm5atf', '::1', 1655106120, 0x5f5f63695f6c6173745f726567656e65726174657c693a313635353130363132303b5573657249447c733a313a2231223b557365727c733a31333a2241646d696e6973747261746f72223b6c6576656c7c733a353a2261646d696e223b666f746f7c733a31383a22666f746f313539363031373834372e706e67223b),
+('hv5oasfjmj1clg7h3a09f6pvn6uf2vs6', '::1', 1655106992, 0x5f5f63695f6c6173745f726567656e65726174657c693a313635353130363939323b5573657249447c733a313a2231223b557365727c733a31333a2241646d696e6973747261746f72223b6c6576656c7c733a353a2261646d696e223b666f746f7c733a31383a22666f746f313539363031373834372e706e67223b),
+('49jbvhmkapjprcetalb7oa8sphd5iq9e', '::1', 1655107667, 0x5f5f63695f6c6173745f726567656e65726174657c693a313635353130373636373b),
+('k3uph2un4btj48e67r51p7qq9ed0a52b', '::1', 1655107996, 0x5f5f63695f6c6173745f726567656e65726174657c693a313635353130373939363b),
+('39og0ar3gpd2v3mbb31739v621bbt8m3', '::1', 1655108299, 0x5f5f63695f6c6173745f726567656e65726174657c693a313635353130383239393b),
+('dn3eoj2ft3p2eicjq2bcp6nai1f8pd3v', '::1', 1655108804, 0x5f5f63695f6c6173745f726567656e65726174657c693a313635353130383830343b5573657249447c733a313a2231223b557365727c733a31393a225a414b41524941204152494620414449545941223b6c6576656c7c733a353a2261646d696e223b666f746f7c733a31383a22666f746f313539363031373834372e706e67223b),
+('is7jdimb46u09n3vlgrq1khv3caiu9s5', '::1', 1655108949, 0x5f5f63695f6c6173745f726567656e65726174657c693a313635353130383934303b5573657249447c733a313a2231223b557365727c733a31393a225a414b41524941204152494620414449545941223b6c6576656c7c733a353a2261646d696e223b666f746f7c733a31383a22666f746f313539363031373834372e706e67223b),
+('o2c7f2vve4ka33j16tscl87dqcesenl2', '::1', 1655179495, 0x5f5f63695f6c6173745f726567656e65726174657c693a313635353137393439353b5573657249447c733a313a2231223b557365727c733a31393a225a414b41524941204152494620414449545941223b6c6576656c7c733a353a2261646d696e223b666f746f7c733a31383a22666f746f313539363031373834372e706e67223b),
+('tfvorig0bj1vvqc4jf4i4pk8et1c9v62', '::1', 1655180250, 0x5f5f63695f6c6173745f726567656e65726174657c693a313635353138303235303b5573657249447c733a313a2231223b557365727c733a31393a225a414b41524941204152494620414449545941223b6c6576656c7c733a353a2261646d696e223b666f746f7c733a31383a22666f746f313539363031373834372e706e67223b),
+('51ng17jfl8pa3p974uitf9uvv7hs7h1p', '::1', 1655182147, 0x5f5f63695f6c6173745f726567656e65726174657c693a313635353138323134373b5573657249447c733a313a2231223b557365727c733a31393a225a414b41524941204152494620414449545941223b6c6576656c7c733a353a2261646d696e223b666f746f7c733a31383a22666f746f313539363031373834372e706e67223b),
+('lqqh6pq6jcipftfi3ouudvc76vh3gg2o', '::1', 1655182149, 0x5f5f63695f6c6173745f726567656e65726174657c693a313635353138323134373b5573657249447c733a313a2231223b557365727c733a31393a225a414b41524941204152494620414449545941223b6c6576656c7c733a353a2261646d696e223b666f746f7c733a31383a22666f746f313539363031373834372e706e67223b),
+('k6tsbem6grg4ok0vro3nh5k7lr5msphb', '::1', 1655220177, 0x5f5f63695f6c6173745f726567656e65726174657c693a313635353232303137373b),
+('aj7sebsnrcro559vnb44d4qdu3qoduho', '::1', 1655220217, 0x5f5f63695f6c6173745f726567656e65726174657c693a313635353232303137373b5573657249447c733a313a2231223b557365727c733a31393a225a414b41524941204152494620414449545941223b6c6576656c7c733a353a2261646d696e223b666f746f7c733a31383a22666f746f313539363031373834372e706e67223b),
+('kjjt925r3fliqjnbq11os3pccujb7ebb', '::1', 1655907397, 0x5f5f63695f6c6173745f726567656e65726174657c693a313635353930373339363b),
+('f1b506qb751a3vcbpcgkg4utqqpueqv8', '::1', 1656781574, 0x5f5f63695f6c6173745f726567656e65726174657c693a313635363738313537343b),
+('qhn03vam56uu2viadchfbkir92jnh739', '::1', 1656782446, 0x5f5f63695f6c6173745f726567656e65726174657c693a313635363738323434363b5573657249447c733a313a2231223b557365727c733a31393a225a414b41524941204152494620414449545941223b6c6576656c7c733a353a2261646d696e223b666f746f7c733a31313a2270726f66696c652e706e67223b),
+('nufbp2jo4s2t5hlmphbp612hf0h8a3bu', '::1', 1656782757, 0x5f5f63695f6c6173745f726567656e65726174657c693a313635363738323735373b5573657249447c733a313a2231223b557365727c733a31393a225a414b41524941204152494620414449545941223b6c6576656c7c733a353a2261646d696e223b666f746f7c733a31333a2270726f66696c652d332e706e67223b),
+('33hjq8svbla818diu0uk38vql6og70ik', '::1', 1656783082, 0x5f5f63695f6c6173745f726567656e65726174657c693a313635363738333038323b5573657249447c733a313a2231223b557365727c733a31393a225a414b41524941204152494620414449545941223b6c6576656c7c733a353a2261646d696e223b666f746f7c733a31333a2270726f66696c652d332e706e67223b),
+('5squ1019dg1lbm8kpajh3321ahgjkree', '::1', 1656783107, 0x5f5f63695f6c6173745f726567656e65726174657c693a313635363738333038323b5573657249447c733a313a2231223b557365727c733a31393a225a414b41524941204152494620414449545941223b6c6576656c7c733a353a2261646d696e223b666f746f7c733a31333a2270726f66696c652d332e706e67223b);
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tbl_barang`
+-- Table structure for table `tbl_barang`
 --
 
 CREATE TABLE `tbl_barang` (
@@ -163,7 +183,7 @@ CREATE TABLE `tbl_barang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `tbl_barang`
+-- Dumping data for table `tbl_barang`
 --
 
 INSERT INTO `tbl_barang` (`kode_barang`, `nama_barang`, `brand`, `stok`, `harga`, `active`) VALUES
@@ -182,7 +202,7 @@ INSERT INTO `tbl_barang` (`kode_barang`, `nama_barang`, `brand`, `stok`, `harga`
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tbl_detail_pembelian`
+-- Table structure for table `tbl_detail_pembelian`
 --
 
 CREATE TABLE `tbl_detail_pembelian` (
@@ -193,7 +213,7 @@ CREATE TABLE `tbl_detail_pembelian` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `tbl_detail_pembelian`
+-- Dumping data for table `tbl_detail_pembelian`
 --
 
 INSERT INTO `tbl_detail_pembelian` (`id_pembelian`, `id_barang`, `qty`, `harga`) VALUES
@@ -202,7 +222,7 @@ INSERT INTO `tbl_detail_pembelian` (`id_pembelian`, `id_barang`, `qty`, `harga`)
 ('ID1596005126', 'CTR811', 1, 245000);
 
 --
--- Trigger `tbl_detail_pembelian`
+-- Triggers `tbl_detail_pembelian`
 --
 DELIMITER $$
 CREATE TRIGGER `pembelian_barang` AFTER INSERT ON `tbl_detail_pembelian` FOR EACH ROW BEGIN
@@ -222,7 +242,7 @@ DELIMITER ;
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tbl_detail_penjualan`
+-- Table structure for table `tbl_detail_penjualan`
 --
 
 CREATE TABLE `tbl_detail_penjualan` (
@@ -233,7 +253,7 @@ CREATE TABLE `tbl_detail_penjualan` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `tbl_detail_penjualan`
+-- Dumping data for table `tbl_detail_penjualan`
 --
 
 INSERT INTO `tbl_detail_penjualan` (`id_penjualan`, `id_barang`, `qty`, `harga`) VALUES
@@ -241,7 +261,7 @@ INSERT INTO `tbl_detail_penjualan` (`id_penjualan`, `id_barang`, `qty`, `harga`)
 ('ID1595990535', 'CTR811', 2, 260000);
 
 --
--- Trigger `tbl_detail_penjualan`
+-- Triggers `tbl_detail_penjualan`
 --
 DELIMITER $$
 CREATE TRIGGER `penjualan_barang` AFTER INSERT ON `tbl_detail_penjualan` FOR EACH ROW BEGIN
@@ -261,7 +281,7 @@ DELIMITER ;
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tbl_pembelian`
+-- Table structure for table `tbl_pembelian`
 --
 
 CREATE TABLE `tbl_pembelian` (
@@ -272,7 +292,7 @@ CREATE TABLE `tbl_pembelian` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `tbl_pembelian`
+-- Dumping data for table `tbl_pembelian`
 --
 
 INSERT INTO `tbl_pembelian` (`id_pembelian`, `tgl_pembelian`, `id_supplier`, `id_user`) VALUES
@@ -282,7 +302,7 @@ INSERT INTO `tbl_pembelian` (`id_pembelian`, `tgl_pembelian`, `id_supplier`, `id
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tbl_penjualan`
+-- Table structure for table `tbl_penjualan`
 --
 
 CREATE TABLE `tbl_penjualan` (
@@ -293,7 +313,7 @@ CREATE TABLE `tbl_penjualan` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `tbl_penjualan`
+-- Dumping data for table `tbl_penjualan`
 --
 
 INSERT INTO `tbl_penjualan` (`id_penjualan`, `nama_pembeli`, `tgl_penjualan`, `id_user`) VALUES
@@ -303,7 +323,7 @@ INSERT INTO `tbl_penjualan` (`id_penjualan`, `nama_pembeli`, `tgl_penjualan`, `i
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tbl_supplier`
+-- Table structure for table `tbl_supplier`
 --
 
 CREATE TABLE `tbl_supplier` (
@@ -314,7 +334,7 @@ CREATE TABLE `tbl_supplier` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `tbl_supplier`
+-- Dumping data for table `tbl_supplier`
 --
 
 INSERT INTO `tbl_supplier` (`id_supplier`, `nama_supplier`, `alamat`, `telp`) VALUES
@@ -324,7 +344,7 @@ INSERT INTO `tbl_supplier` (`id_supplier`, `nama_supplier`, `alamat`, `telp`) VA
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tbl_user`
+-- Table structure for table `tbl_user`
 --
 
 CREATE TABLE `tbl_user` (
@@ -341,61 +361,61 @@ CREATE TABLE `tbl_user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `tbl_user`
+-- Dumping data for table `tbl_user`
 --
 
 INSERT INTO `tbl_user` (`id_user`, `username`, `fullname`, `password`, `alamat`, `hp`, `foto`, `level`, `active`, `last_login`) VALUES
-(1, 'admin', 'Administrator', '$2y$08$BO41OJFfhPPPzjKdWw2I6OyUElK1mkD43UVt1ss6J1xrVUExC1lRy', '', '', 'foto1596017847.png', 'admin', 'Y', '2020-07-30 07:59:43'),
-(2, 'pegawai', 'Pegawai', '$2y$10$bZkYvXB4K93BWcR05e92r.Vcyq1PrnGFtzougX0LdN5bLaGY/1gPa', 'Jl. Semeru No.90', '085731109355', 'foto1596071469.png', 'pegawai', 'Y', '2020-07-18 15:18:43'),
-(6, 'user2', 'Pegawai Kedua', '$2y$10$swIMV3E0b6nRrDXnyBgjO.tN7vMLNmYf6Zm76CG.TO7WH9sZU5LTm', 'Jl. Nanas No. 24, Pace - Nganjuk', '085731109355', 'foto1595054714.png', 'pegawai', 'Y', '2020-07-22 07:59:43');
+(1, 'admin', 'ZAKARIA ARIF ADITYA', '$2y$08$BO41OJFfhPPPzjKdWw2I6OyUElK1mkD43UVt1ss6J1xrVUExC1lRy', '', '', 'profile-3.png', 'admin', 'Y', '2022-07-03 00:20:46'),
+(2, 'pegawai', 'Pegawai', '$2y$10$bZkYvXB4K93BWcR05e92r.Vcyq1PrnGFtzougX0LdN5bLaGY/1gPa', 'Jl. Semeru No.90', '085731109355', 'profile-2.png', 'pegawai', 'Y', '2020-07-18 15:18:43'),
+(6, 'user2', 'Pegawai Kedua', '$2y$10$swIMV3E0b6nRrDXnyBgjO.tN7vMLNmYf6Zm76CG.TO7WH9sZU5LTm', 'Jl. Nanas No. 24, Pace - Nganjuk', '085731109355', 'profile-1.png', 'pegawai', 'Y', '2020-07-22 07:59:43');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indeks untuk tabel `ci_sessions`
+-- Indexes for table `ci_sessions`
 --
 ALTER TABLE `ci_sessions`
   ADD KEY `ci_sessions_timestamp` (`timestamp`);
 
 --
--- Indeks untuk tabel `tbl_barang`
+-- Indexes for table `tbl_barang`
 --
 ALTER TABLE `tbl_barang`
   ADD PRIMARY KEY (`kode_barang`);
 
 --
--- Indeks untuk tabel `tbl_pembelian`
+-- Indexes for table `tbl_pembelian`
 --
 ALTER TABLE `tbl_pembelian`
   ADD PRIMARY KEY (`id_pembelian`);
 
 --
--- Indeks untuk tabel `tbl_penjualan`
+-- Indexes for table `tbl_penjualan`
 --
 ALTER TABLE `tbl_penjualan`
   ADD PRIMARY KEY (`id_penjualan`);
 
 --
--- Indeks untuk tabel `tbl_supplier`
+-- Indexes for table `tbl_supplier`
 --
 ALTER TABLE `tbl_supplier`
   ADD PRIMARY KEY (`id_supplier`);
 
 --
--- Indeks untuk tabel `tbl_user`
+-- Indexes for table `tbl_user`
 --
 ALTER TABLE `tbl_user`
   ADD PRIMARY KEY (`id_user`),
   ADD UNIQUE KEY `username` (`username`);
 
 --
--- AUTO_INCREMENT untuk tabel yang dibuang
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT untuk tabel `tbl_user`
+-- AUTO_INCREMENT for table `tbl_user`
 --
 ALTER TABLE `tbl_user`
   MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
