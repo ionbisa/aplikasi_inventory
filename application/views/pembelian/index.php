@@ -5,7 +5,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 <div class="row">
     <div class="col-sm-12 col-md-10">
-        <h4 class="mb-0"><i class="fa fa-share"></i> Data Pembelian Barang</h4>
+        <h4 class="mb-0"><i class="fa fa-share"></i> Data Masuk Barang</h4>
     </div>
     <div class="col-sm-12 col-md-2">
         <a href="<?= site_url('tambah_pembelian'); ?>" class="btn btn-success btn-sm btn-block">Tambah Data</a>
@@ -32,7 +32,7 @@ if ($this->session->flashdata('error')) {
         <thead class="thead-dark">
             <tr>
                 <th scope="col">#</th>
-                <th scope="col">ID Pembelian</th>
+                <th scope="col">ID Barang Masuk</th>
                 <th scope="col">Tanggal</th>
                 <th scope="col">Supplier</th>
                 <th scope="col">Jumlah Jenis</th>

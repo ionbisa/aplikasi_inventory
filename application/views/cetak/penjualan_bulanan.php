@@ -19,7 +19,7 @@ function tanggal_indo($tgl)
         <tr>
             <th scope="col">#</th>
             <th scope="col">Tanggal</th>
-            <th scope="col">ID Penjualan</th>
+            <th scope="col">ID Barang Keluar</th>
             <th scope="col">Nama Pembeli</th>
             <th scope="col">Nama Barang</th>
             <th scope="col">Brand</th>

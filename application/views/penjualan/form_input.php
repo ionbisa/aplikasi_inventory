@@ -2,7 +2,7 @@
 
 <div class="row">
     <div class="col-sm-12 col-md-10">
-        <h4 class="mb-0"><i class="fa fa-reply"></i> Tambah Data Penjualan Barang</h4>
+        <h4 class="mb-0"><i class="fa fa-reply"></i> Tambah Data Keluar Barang</h4>
     </div>
 </div>
 <hr class="mt-0" />
@@ -14,7 +14,7 @@
 <?= form_open(); ?>
 <div class="col-md-12">
     <div class="form-group row">
-        <label for="tanggal" class="col-sm-2 col-form-label">Tanggal Penjualan</label>
+        <label for="tanggal" class="col-sm-2 col-form-label">Tanggal Keluar</label>
         <div class="col-sm-3">
             <input type="text" class="form-control form-control-sm <?= (form_error('tanggal')) ? 'is-invalid' : ''; ?>" name="tanggal" id="date-picker" value="<?= (set_value('tanggal')) ? set_value('tanggal') : date('d/m/Y'); ?>">
             <div class="invalid-feedback">
@@ -84,7 +84,7 @@
     </table>
     <div class="col-sm-4 offset-sm-8">
         <button type="submit" name="submit" class="btn btn-primary btn-sm" value="Submit">
-            <i class="fa fa-save"></i> Simpan Data Penjualan
+            <i class="fa fa-save"></i> Simpan Data Keluar
         </button>
         <button type="button" onclick="window.history.back()" class="btn btn-light btn-sm">
             Kembali

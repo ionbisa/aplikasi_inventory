@@ -13,7 +13,7 @@ function tanggal_indo($tgl)
 
 <div class="row">
     <div class="col-sm-12 col-md-10">
-        <h4 class="mb-0"><i class="fa fa-file-text"></i> Laporan Bulanan Penjualan Barang</h4>
+        <h4 class="mb-0"><i class="fa fa-file-text"></i> Laporan Bulanan Barang Keluar</h4>
     </div>
 </div>
 <hr class="mt-0" />
@@ -72,7 +72,7 @@ if ($this->session->flashdata('alert')) {
         <tr>
             <th scope="col">#</th>
             <th scope="col">Tanggal</th>
-            <th scope="col">ID Penjualan</th>
+            <th scope="col">ID Barang Keluar</th>
             <th scope="col">Nama Pembeli</th>
             <th scope="col">Nama Barang</th>
             <th scope="col">Brand</th>

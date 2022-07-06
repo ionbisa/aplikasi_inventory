@@ -53,8 +53,8 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 col-sm-12 text-center mt-5 mb-3">
-                <img src="<?= base_url('assets/img/login.png'); ?>" class="login" />
-                <h4 class="text-white mt-2">Aplikasi Stok Barang</h4>
+                <img src="<?= base_url('assets/img/login_1.png'); ?>" class="login" />
+                <h4 class="text-white mt-2">Sistem Permintaan Barang</h4>
                 <h3 class="text-white mt-2">PT. MITRA STANIA PRIMA </h3>
 
 

@@ -2,7 +2,7 @@
 
 <div class="row">
     <div class="col-sm-12 col-md-10">
-        <h4 class="mb-0"><i class="fa fa-file-text"></i> Laporan Harian Pembelian Barang</h4>
+        <h4 class="mb-0"><i class="fa fa-file-text"></i> Laporan Harian Masuk Barang</h4>
     </div>
 </div>
 <hr class="mt-0" />
@@ -35,7 +35,7 @@ if ($this->session->flashdata('alert')) {
     <thead class="thead-dark">
         <tr>
             <th scope="col">#</th>
-            <th scope="col">ID Pembelian</th>
+            <th scope="col">ID Barang Masuk</th>
             <th scope="col">Nama Supplier</th>
             <th scope="col">Nama Barang</th>
             <th scope="col">Brand</th>
