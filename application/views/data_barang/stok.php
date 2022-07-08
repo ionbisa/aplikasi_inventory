@@ -13,9 +13,9 @@
                 <th scope="col">#</th>
                 <th scope="col">Kode Barang</th>
                 <th scope="col">Nama Barang</th>
-                <th scope="col">Brand</th>
-                <th scope="col">Stok</th>
-                <th scope="col">Harga Jual</th>
+                <th scope="col">Satuan</th>
+                <th scope="col">Qty</th>
+                <th scope="col">Harga</th>
             </tr>
         </thead>
         <tbody>

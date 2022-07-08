@@ -50,9 +50,9 @@
     </div>
 
     <div class="form-group row">
-        <label for="harga" class="col-sm-3 col-form-label">Harga Jual</label>
+        <label for="harga" class="col-sm-3 col-form-label">Harga</label>
         <div class="col-sm-6">
-            <input type="text" class="form-control form-control-sm uang <?= (form_error('harga')) ? 'is-invalid' : ''; ?>" id="harga" name="harga" placeholder="Harga Jual" value="<?= set_value('harga'); ?>">
+            <input type="text" class="form-control form-control-sm uang <?= (form_error('harga')) ? 'is-invalid' : ''; ?>" id="harga" name="harga" placeholder="Harga" value="<?= set_value('harga'); ?>">
             <div class="invalid-feedback">
                 <?= form_error('harga', '<p class="error-message">', '</p>'); ?>
             </div>
