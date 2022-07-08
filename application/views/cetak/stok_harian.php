@@ -21,10 +21,10 @@ function tanggal_indo($tgl)
             <th scope="col">#</th>
             <th scope="col">Kode Barang</th>
             <th scope="col">Nama Barang</th>
-            <th scope="col">Brand</th>
+            <th scope="col">Satuan</th>
             <th scope="col" class="text-center">Stok Barang</th>
-            <th scope="col" class="text-center">Qty Penjualan</th>
-            <th scope="col" class="text-center">Qty Pembelian</th>
+            <th scope="col" class="text-center">Qty Barang Keluar</th>
+            <th scope="col" class="text-center">Qty Barang Masuk</th>
         </tr>
     </thead>
     <tbody>

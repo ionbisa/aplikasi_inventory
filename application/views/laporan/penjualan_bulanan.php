@@ -73,9 +73,9 @@ if ($this->session->flashdata('alert')) {
             <th scope="col">#</th>
             <th scope="col">Tanggal</th>
             <th scope="col">ID Barang Keluar</th>
-            <th scope="col">Nama Pembeli</th>
+            <th scope="col">Nama</th>
             <th scope="col">Nama Barang</th>
-            <th scope="col">Brand</th>
+            <th scope="col">Satuan</th>
             <th scope="col" class="text-center">Qty</th>
             <th scope="col" class="text-center">Harga</th>
             <th scope="col" class="text-center">Total</th>

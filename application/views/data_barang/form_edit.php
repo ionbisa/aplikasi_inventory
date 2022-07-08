@@ -22,7 +22,7 @@
 
     <div class="form-group row">
         <label for="nama_barang" class="col-sm-3 col-form-label">Nama Barang</label>
-        <div class="col-sm-9">
+        <div class="col-sm-6">
             <input type="text" class="form-control form-control-sm <?= (form_error('nama_barang')) ? 'is-invalid' : ''; ?>" id="nama_barang" name="nama_barang" placeholder="Nama Barang" value="<?= (set_value('nama_barang')) ? set_value('nama_barang') : $barang->nama_barang; ?>">
             <div class="invalid-feedback">
                 <?= form_error('nama_barang', '<p class="error-message">', '</p>'); ?>
@@ -31,9 +31,9 @@
     </div>
 
     <div class="form-group row">
-        <label for="brand" class="col-sm-3 col-form-label">Brand</label>
-        <div class="col-sm-9">
-            <input type="text" class="form-control form-control-sm <?= (form_error('brand')) ? 'is-invalid' : ''; ?>" id="brand" name="brand" placeholder="Nama Brand" value="<?= (set_value('brand')) ? set_value('brand') : $barang->brand; ?>">
+        <label for="brand" class="col-sm-3 col-form-label">Satuan</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control form-control-sm <?= (form_error('brand')) ? 'is-invalid' : ''; ?>" id="brand" name="brand" placeholder="Satuan" value="<?= (set_value('brand')) ? set_value('brand') : $barang->brand; ?>">
             <div class="invalid-feedback">
                 <?= form_error('brand', '<p class="error-message">', '</p>'); ?>
             </div>
@@ -51,9 +51,9 @@
     </div>
 
     <div class="form-group row">
-        <label for="harga" class="col-sm-3 col-form-label">Harga Jual</label>
+        <label for="harga" class="col-sm-3 col-form-label">Harga</label>
         <div class="col-sm-6">
-            <input type="text" class="form-control form-control-sm uang <?= (form_error('harga')) ? 'is-invalid' : ''; ?>" id="harga" name="harga" placeholder="Harga Jual" value="<?= (set_value('harga')) ? set_value('harga') : number_format($barang->harga, 0, ',', '.'); ?>">
+            <input type="text" class="form-control form-control-sm uang <?= (form_error('harga')) ? 'is-invalid' : ''; ?>" id="harga" name="harga" placeholder="Harga" value="<?= (set_value('harga')) ? set_value('harga') : number_format($barang->harga, 0, ',', '.'); ?>">
             <div class="invalid-feedback">
                 <?= form_error('harga', '<p class="error-message">', '</p>'); ?>
             </div>

@@ -16,15 +16,15 @@ function tanggal_indo($tgl)
 
 <div class="row">
     <div class="col-sm-12 col-md-10">
-        <h4 class="mb-0"><i class="fa fa-share"></i> Detail Pembelian Barang</h4>
+        <h4 class="mb-0"><i class="fa fa-share"></i> Detail Barang Masuk</h4>
     </div>
 </div>
 <hr class="mt-0" />
-<h6 class="mb-2">ID Pembelian</h6>
+<h6 class="mb-2">ID Barang Masuk</h6>
 <p class="text-muted display-5 mt-1 mb-2">#<?= $d->id_pembelian; ?> ( <?= tanggal_indo($d->tgl_pembelian); ?> )</p>
 <h6 class="mb-1 mt-2">Supplier</h6>
 <p class="text-muted display-5 mt-1 mb-2"><?= $d->nama_supplier; ?></p>
-<h6 class="mb-1 mt-2">Operator</h6>
+<h6 class="mb-1 mt-2">Admin</h6>
 <p class="text-muted display-5 mt-1 mb-4"><?= $d->fullname; ?></p>
 <table class="table table-sm table-hover">
     <thead class="thead-dark">
@@ -32,7 +32,7 @@ function tanggal_indo($tgl)
             <th scope="col">#</th>
             <th scope="col">Kode Barang</th>
             <th scope="col">Nama Barang</th>
-            <th scope="col">Brand</th>
+            <th scope="col">Satuan</th>
             <th scope="col">Qty</th>
             <th scope="col">Harga Satuan</th>
             <th scope="col">Harga Total</th>

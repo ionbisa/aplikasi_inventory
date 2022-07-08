@@ -52,9 +52,9 @@
         </div>
     </div>
     <div class="form-group row">
-        <label for="jumlahx" class="col-sm-2 col-form-label">Jumlah</label>
+        <label for="jumlahx" class="col-sm-2 col-form-label">Qty</label>
         <div class="col-sm-2">
-            <input type="number" class="form-control form-control-sm" id="jumlahx" placeholder="Jumlah Beli">
+            <input type="number" class="form-control form-control-sm" id="jumlahx" placeholder="Qty">
         </div>
     </div>
     <div class="form-group row">
@@ -77,8 +77,8 @@
                 <tr>
                     <th scope="col">#</th>
                     <th scope="col">Nama Barang</th>
-                    <th scope="col" class="text-center">Jumlah</th>
-                    <th scope="col" class="text-right">Harga</th>
+                    <th scope="col" class="text-center">Qty</th>
+                    <th scope="col" class="text-right">Harga Satuan</th>
                     <th scope="col" class="text-right">Total</th>
                     <th scope="col" class="text-center">Opsi</th>
                 </tr>

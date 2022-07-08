@@ -11,7 +11,7 @@ function tanggal_indo($tgl)
 }
 ?>
 <img src="<?= base_url('assets/img/logo.png'); ?>" class="logo" />
-<h6 class="display-5 text-center mt-2 mb-0">Laporan Bulanan Penjualan Barang</h6>
+<h6 class="display-5 text-center mt-2 mb-0">Laporan Bulanan Barang Keluar</h6>
 <p class="text-center display-6 mt-0"><?= 'Bulan ' . ucwords($bulan) . ' Tahun ' . $tahun; ?></p>
 <hr class="mt-0" />
 <table class="table table-sm table-bordered mt-3">
@@ -22,7 +22,7 @@ function tanggal_indo($tgl)
             <th scope="col">ID Barang Keluar</th>
             <th scope="col">Nama Pembeli</th>
             <th scope="col">Nama Barang</th>
-            <th scope="col">Brand</th>
+            <th scope="col">Satuan</th>
             <th scope="col" class="text-center">Qty</th>
             <th scope="col" class="text-center">Harga</th>
             <th scope="col" class="text-center">Total</th>

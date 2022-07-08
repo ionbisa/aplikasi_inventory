@@ -2,7 +2,7 @@
 
 <div class="row">
     <div class="col-sm-12 col-md-10">
-        <h4 class="mb-0"><i class="fa fa-reply"></i> Edit Data Penjualan Barang</h4>
+        <h4 class="mb-0"><i class="fa fa-reply"></i> Edit Data Keluar Barang</h4>
     </div>
 </div>
 <hr class="mt-0" />
@@ -15,7 +15,7 @@
 <input type="hidden" name="idP" value="<?= $fdata->id_penjualan; ?>">
 <div class="col-md-12">
     <div class="form-group row">
-        <label for="tanggal" class="col-sm-2 col-form-label">Tanggal Penjualan</label>
+        <label for="tanggal" class="col-sm-2 col-form-label">Tanggal Keluar</label>
         <div class="col-sm-3">
             <input type="text" class="form-control form-control-sm <?= (form_error('tanggal')) ? 'is-invalid' : ''; ?>" name="tanggal" id="date-picker" value="<?= (set_value('tanggal')) ? set_value('tanggal') : date('d/m/Y', strtotime($fdata->tgl_penjualan)); ?>">
             <div class="invalid-feedback">
@@ -24,9 +24,9 @@
         </div>
     </div>
     <div class="form-group row">
-        <label for="pembeli" class="col-sm-2 col-form-label">Nama Pembeli</label>
+        <label for="pembeli" class="col-sm-2 col-form-label">Nama</label>
         <div class="col-sm-6">
-            <input type="text" name="pembeli" id="pembeli" class="form-control form-control-sm <?= (form_error('pembeli')) ? 'is-invalid' : ''; ?>" placeholder="Nama Pembeli" value="<?= (set_value('pembeli')) ? set_value('pembeli') : $fdata->nama_pembeli; ?>">
+            <input type="text" name="pembeli" id="pembeli" class="form-control form-control-sm <?= (form_error('pembeli')) ? 'is-invalid' : ''; ?>" placeholder="Nama" value="<?= (set_value('pembeli')) ? set_value('pembeli') : $fdata->nama_pembeli; ?>">
             <div class="invalid-feedback">
                 <?= form_error('pembeli', '<p class="error-message">', '</p>'); ?>
             </div>
@@ -52,9 +52,9 @@
         </div>
     </div>
     <div class="form-group row">
-        <label for="jumlahx" class="col-sm-2 col-form-label">Jumlah Beli</label>
+        <label for="jumlahx" class="col-sm-2 col-form-label">Qty</label>
         <div class="col-sm-2">
-            <input type="text" class="form-control form-control-sm qty" id="jumlahx" placeholder="Jumlah Beli">
+            <input type="text" class="form-control form-control-sm qty" id="jumlahx" placeholder="Jumlah keluar barang">
         </div>
     </div>
     <div class="form-group row">
@@ -85,7 +85,7 @@
     </table>
     <div class="col-sm-4 offset-sm-8">
         <button type="submit" name="submit" class="btn btn-primary btn-sm" value="Submit">
-            <i class="fa fa-save"></i> Update Data Penjualan
+            <i class="fa fa-save"></i> Update Data Keluar
         </button>
         <button type="button" onclick="window.history.back()" class="btn btn-light btn-sm">
             Kembali
