@@ -52,5 +52,7 @@ function tanggal_indo()
     <hr>
     <h4 class="alert-heading">
     <i class="fa fa-info-circle"></i> Selamat Datang di <b>Sistem Permintaan Barang.</b></h4>
-    <p class="mb-5" style="font-size: 16px;">Saat ini anda login sebagai <b><?= $this->session->userdata('User'); ?></b> dengan level <b><?= ucfirst($this->session->userdata('level')); ?></b></p>
+    <p class="mb-5" style="font-size: 16px;">Saat ini anda login sebagai <b><?= $this->session->userdata('User'); ?></b> 
+    <!-- dengan level <b><?= ucfirst($this->session->userdata('level')); ?></b> -->
+</p>
 </div>

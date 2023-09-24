@@ -23,10 +23,10 @@
         </div>
     </div>
     <div class="form-group row">
-        <label for="supplier" class="col-sm-2 col-form-label">Supplier</label>
+        <label for="supplier" class="col-sm-2 col-form-label">Customer</label>
         <div class="col-sm-6">
             <select class="custom-select custom-select-sm supplier <?= (form_error('supplier')) ? 'is-invalid' : ''; ?>" id="supplier" name="supplier">
-                <option value="" disabled selected>Pilih Supplier</option>
+                <option value="" disabled selected>Pilih Customer</option>
                 <?php foreach ($supplier->result() as $s) : ?>
                     <option value="<?= $s->id_supplier; ?>">
                         <?= $s->nama_supplier; ?>
