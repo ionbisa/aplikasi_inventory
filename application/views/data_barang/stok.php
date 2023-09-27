@@ -10,7 +10,7 @@
     <table class="table table-sm table-hover table-striped" id="tables">
         <thead class="thead-dark">
             <tr>
-                <th scope="col">#</th>
+                <th scope="col" class="text-center">No</th>
                 <th scope="col">Kode Barang</th>
                 <th scope="col">Nama Barang</th>
                 <th scope="col">Satuan</th>

@@ -92,7 +92,7 @@
             </li>
 
             <li <?= (in_array(strtolower($this->uri->segment(1)), ['penjualan_harian', 'penjualan_bulanan'])) ? 'class="active"' : ''; ?>>
-                <a href="#pagePenjualan" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-file-text-o"></i> Laporan Barang Keluar</a>
+                <a href="#pagePenjualan" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-file-text-o"></i> Laporan Barang Penjualan</a>
                 <ul class="collapse list-unstyled" id="pagePenjualan">
                     <li <?= (strtolower($this->uri->segment(1)) == 'penjualan_harian') ? 'class="active"' : ''; ?>>
                         <a href="<?= site_url('penjualan_harian'); ?>">
@@ -113,7 +113,7 @@
                 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                 Copyright &copy;<script>
                     document.write(new Date().getFullYear());
-                </script> Tugas Akhir Skripsi | Aplikasi Stok Barang <i class="fa fa-heart" aria-hidden="true"></i> by <a href="#" target="_blank">ZAKARIA ARIF ADITYA</a>
+                </script> | Aplikasi Stok Barang <i class="fa fa-heart" aria-hidden="true"></i> by <a href="#" target="_blank">ionbisa</a>
                 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
             </p>
         </div>

@@ -7,10 +7,10 @@
 <table class="table table-sm table-bordered table-striped mt-3">
     <thead>
         <tr>
-            <th scope="col">#</th>
-            <th scope="col">Kode Barang</th>
-            <th scope="col">Nama Barang</th>
-            <th scope="col">Satuan</th>
+            <th scope="col" class="text-center">No</th>
+            <th scope="col" class="text-center">Kode Barang</th>
+            <th scope="col" class="text-center">Nama Barang</th>
+            <th scope="col" class="text-center">Satuan</th>
             <th scope="col" class="text-center">Stok Barang</th>
             <th scope="col" class="text-center">Qty Barang Keluar</th>
             <th scope="col" class="text-center">Qty Barang Masuk</th>
@@ -25,10 +25,10 @@
                 $pembelian = ($dt->qty_pembelian_new != '') ? $dt->qty_pembelian_new : 0;
 
                 echo '<tr>';
-                echo '<td>' . $i++ . '</td>';
-                echo '<td>' . $dt->kode_barang . '</td>';
+                echo '<td class="text-center">' . $i++ . '</td>';
+                echo '<td class="text-center">' . $dt->kode_barang . '</td>';
                 echo '<td>' . $dt->nama_barang . '</td>';
-                echo '<td>' . $dt->brand . '</td>';
+                echo '<td class="text-center">' . $dt->brand . '</td>';
                 echo '<td class="text-center">' . (($dt->stok + $penjualan) - $pembelian) . '</td>';
                 echo '<td class="text-center">' . (($dt->qty_penjualan != '') ? $dt->qty_penjualan : 0) . '</td>';
                 echo '<td class="text-center">' . (($dt->qty_pembelian != '') ? $dt->qty_pembelian : 0) . '</td>';
@@ -41,4 +41,10 @@
         }
         ?>
     </tbody>
+    
 </table>
+<br>
+<p class="text-right display-6 mt-0"><?= 'Bandung, ' . ucwords($bulan) . '  ' . $tahun; ?></p>
+<br><br><br>
+<p class="text-right display-6 mt-1"><b>( Manager Operasional )</b></p>
+

@@ -18,11 +18,11 @@ function tanggal_indo($tgl)
 <table class="table table-sm table-bordered mt-3">
     <thead>
         <tr>
-            <th scope="col">#</th>
-            <th scope="col">ID Barang Keluar</th>
-            <th scope="col">Nama Pembeli</th>
-            <th scope="col">Nama Barang</th>
-            <th scope="col">Satuan</th>
+            <th scope="col" class="text-center">No</th>
+            <th scope="col" class="text-center">ID Barang Keluar</th>
+            <th scope="col" class="text-center">Nama Pembeli</th>
+            <th scope="col" class="text-center">Nama Barang</th>
+            <th scope="col" class="text-center">Satuan</th>
             <th scope="col" class="text-center">Qty</th>
             <th scope="col" class="text-center">Harga</th>
             <th scope="col" class="text-center">Total</th>
@@ -38,13 +38,13 @@ function tanggal_indo($tgl)
             foreach ($data->result() as $dt) {
                 echo '<tr>';
                 if ($row == 1) :
-                    echo '<td rowspan="' . $dt->row . '">' . $i++ . '</td>';
-                    echo '<td rowspan="' . $dt->row . '">' . $dt->id_penjualan . '</td>';
-                    echo '<td rowspan="' . $dt->row . '">' . $dt->nama_pembeli . '</td>';
+                    echo '<td rowspan="' . $dt->row . '" class="text-center">' . $i++ . '</td>';
+                    echo '<td rowspan="' . $dt->row . '" class="text-center">' . $dt->id_penjualan . '</td>';
+                    echo '<td rowspan="' . $dt->row . '" class="text-center">' . $dt->nama_pembeli . '</td>';
                 endif;
                 echo '<td>' . $dt->nama_barang . '</td>';
-                echo '<td>' . $dt->brand . '</td>';
-                echo '<td>' . $dt->qty . '</td>';
+                echo '<td class="text-center">' . $dt->brand . '</td>';
+                echo '<td class="text-center">' . $dt->qty . '</td>';
                 echo '<td><span class="float-left">Rp.</span><span class="float-right">' . number_format($dt->harga, 0, ',', '.') . '</span></td>';
                 echo '<td><span class="float-left">Rp.</span><span class="float-right">' . number_format(($dt->harga * $dt->qty), 0, ',', '.') . '</span></td>';
                 echo '</tr>';
