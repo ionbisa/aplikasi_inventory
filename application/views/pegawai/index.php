@@ -28,12 +28,12 @@ if ($this->session->flashdata('error')) {
     <table class="table table-sm table-hover table-striped" id="tables">
         <thead class="thead-dark">
             <tr>
-                <th scope="col">#</th>
-                <th scope="col">Username</th>
-                <th scope="col">Nama Pegawai</th>
-                <th scope="col">Status</th>
-                <th scope="col">Terakhir Login</th>
-                <th scope="col">Opsi</th>
+                <th scope="col" class="text-center">No</th>
+                <th scope="col" class="text-center">Username</th>
+                <th scope="col" class="text-center">Nama Pegawai</th>
+                <th scope="col" class="text-center">Status</th>
+                <th scope="col" class="text-center">Terakhir Login</th>
+                <th scope="col" class="text-center">Opsi</th>
             </tr>
         </thead>
         <tbody>
