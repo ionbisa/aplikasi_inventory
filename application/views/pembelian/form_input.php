@@ -22,7 +22,7 @@
             </div>
         </div>
     </div>
-    <div class="form-group row">
+    <!-- <div class="form-group row">
         <label for="supplier" class="col-sm-2 col-form-label">Customer</label>
         <div class="col-sm-6">
             <select class="custom-select custom-select-sm supplier <?= (form_error('supplier')) ? 'is-invalid' : ''; ?>" id="supplier" name="supplier">
@@ -37,9 +37,9 @@
                 <?= form_error('supplier', '<p class="error-message">', '</p>'); ?>
             </div>
         </div>
-    </div>
+    </div> -->
     <div class="form-group row">
-        <label for="barangx" class="col-sm-2 col-form-label">Barang</label>
+        <label for="barangx" class="col-sm-2 col-form-label">Nama Barang</label>
         <div class="col-sm-6">
             <select class="custom-select custom-select-sm barang-select" id="barangx">
                 <option value="" disabled selected>Pilih Barang</option>
@@ -75,7 +75,7 @@
         <table class="table table-sm table-hover">
             <thead class="thead-dark">
                 <tr>
-                    <th scope="col">#</th>
+                    <th scope="col">No</th>
                     <th scope="col">Nama Barang</th>
                     <th scope="col" class="text-center">Qty</th>
                     <th scope="col" class="text-right">Harga Satuan</th>

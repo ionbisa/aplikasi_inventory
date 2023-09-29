@@ -48,11 +48,13 @@ function tanggal_indo()
 ?>
 <div class="alert alert-info" role="alert">
     <p class="mb-0 text-right">
-    <b><i class="fa fa-calendar"></i> <?= hari_ini(); ?>, <?= tanggal_indo(); ?></b></p>
+        <b><i class="fa fa-calendar"></i> <?= hari_ini(); ?>, <?= tanggal_indo(); ?></b>
+    </p>
     <hr>
     <h4 class="alert-heading">
-    <i class="fa fa-info-circle"></i> <b>Sistem Permintaan Barang.</b></h4>
-    <p class="mb-5" style="font-size: 16px;">Selamat Datang <b><?= $this->session->userdata('User'); ?></b> 
-    anda login dengan level <b><?= ucfirst($this->session->userdata('level')); ?></b> 
-</p>
+        <i class="fa fa-info-circle"></i> <b>Sistem Inventory.</b>
+    </h4>
+    <p class="mb-5" style="font-size: 16px;">Selamat Datang <b><?= $this->session->userdata('User'); ?></b>
+        anda login dengan level <b><?= ucfirst($this->session->userdata('level')); ?></b>
+    </p>
 </div>

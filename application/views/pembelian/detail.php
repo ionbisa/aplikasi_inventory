@@ -22,20 +22,20 @@ function tanggal_indo($tgl)
 <hr class="mt-0" />
 <h6 class="mb-2">ID Barang Masuk</h6>
 <p class="text-muted display-5 mt-1 mb-2">#<?= $d->id_pembelian; ?> ( <?= tanggal_indo($d->tgl_pembelian); ?> )</p>
-<h6 class="mb-1 mt-2">Customer</h6>
+<!-- <h6 class="mb-1 mt-2">Customer</h6> -->
 <p class="text-muted display-5 mt-1 mb-2"><?= $d->nama_supplier; ?></p>
-<h6 class="mb-1 mt-2">Marketing</h6>
+<h6 class="mb-1 mt-2">Petugas</h6>
 <p class="text-muted display-5 mt-1 mb-4"><?= $d->fullname; ?></p>
 <table class="table table-sm table-hover">
     <thead class="thead-dark">
         <tr>
-            <th scope="col">#</th>
-            <th scope="col">Kode Barang</th>
-            <th scope="col">Nama Barang</th>
-            <th scope="col">Satuan</th>
-            <th scope="col">Qty</th>
-            <th scope="col">Harga Satuan</th>
-            <th scope="col">Harga Total</th>
+            <th scope="col" class="text-center">No</th>
+            <th scope="col" class="text-center">Kode Barang</th>
+            <th scope="col" class="text-center">Nama Barang</th>
+            <th scope="col" class="text-center">Satuan</th>
+            <th scope="col" class="text-center">Qty</th>
+            <th scope="col" class="text-center">Harga Satuan</th>
+            <th scope="col" class="text-center">Harga Total</th>
         </tr>
     </thead>
     <tbody>
@@ -49,11 +49,11 @@ function tanggal_indo($tgl)
             $total_pengeluaran += $total;
         ?>
             <tr>
-                <td><?= $i++; ?></td>
-                <td><?= $dd->kode_barang; ?></td>
+                <td class="text-center"><?= $i++; ?></td>
+                <td class="text-center"><?= $dd->kode_barang; ?></td>
                 <td><?= $dd->nama_barang; ?></td>
-                <td><?= $dd->brand; ?></td>
-                <td><?= $dd->qty; ?></td>
+                <td class="text-center"><?= $dd->brand; ?></td>
+                <td class="text-center"><?= $dd->qty; ?></td>
                 <td>
                     <span class="float-left">Rp.</span>
                     <span class="float-right pr-3">
@@ -69,7 +69,7 @@ function tanggal_indo($tgl)
             </tr>
         <?php endforeach; ?>
         <tr>
-            <td colspan="6" class="text-center"><b>Biaya Total Pembelian</b></td>
+            <td colspan="6" class="text-center"><b>Biaya Total Barang Masuk</b></td>
             <td>
                 <b>
                     <span class="float-left">Rp.</span>

@@ -2,7 +2,7 @@
 
 <div class="row">
     <div class="col-sm-12 col-md-10">
-        <h4 class="mb-0"><i class="fa fa-cubes"></i> Data Barang</h4>
+        <h4 class="mb-0"><i class="fa fa-cubes"></i> Data Stok Barang</h4>
     </div>
     <div class="col-sm-12 col-md-2">
         <a href="<?= site_url('tambah_barang'); ?>" class="btn btn-success btn-sm btn-block">Tambah Data</a>

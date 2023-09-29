@@ -25,7 +25,7 @@ class Pembelian extends CI_Controller
         $this->cart->destroy();
 
         $data = [
-            'title' => 'Data Pembelian Barang'
+            'title' => 'Data Masuk Barang'
         ];
 
         $this->template->kasir('pembelian/index', $data);
@@ -54,7 +54,7 @@ class Pembelian extends CI_Controller
                 )
             );
 
-            $this->form_validation->set_rules(
+            /*     $this->form_validation->set_rules(
                 'supplier',
                 'Supplier',
                 'required|min_length[10]',
@@ -62,7 +62,7 @@ class Pembelian extends CI_Controller
                     'required' => '{field} wajib dipilih',
                     'min_length' => '{field} tidak valid'
                 )
-            );
+            ); */
 
             if ($this->form_validation->run() == TRUE) {
 
@@ -74,7 +74,7 @@ class Pembelian extends CI_Controller
                 $data_pembelian = [
                     'id_pembelian' => $id,
                     'tgl_pembelian' => $tgl,
-                    'id_supplier' => $sup,
+                    /* 'id_supplier' => $sup, */
                     'id_user' => $user
                 ];
                 //baca cart dan memasukkannya dalam array untuk disimpan
@@ -100,7 +100,7 @@ class Pembelian extends CI_Controller
                     //kosongkan cart
                     $this->cart->destroy();
                     //buat notifikasi penyimpanan berhasil
-                    $this->session->set_flashdata('success', 'Data pembelian berhasil ditambahkan...');
+                    /* $this->session->set_flashdata('success', 'Data pembelian berhasil ditambahkan...'); */
 
                     redirect('data_pembelian');
                 }
@@ -108,7 +108,7 @@ class Pembelian extends CI_Controller
         }
 
         $data = [
-            'title' => 'Tambah Data Pembelian',
+            'title' => 'Tambah Data Masuk Barang',
             'data' => $this->m_pembelian->getData('tbl_barang', ['active' => 'Y']),
             'supplier' => $this->m_pembelian->getAllData('tbl_supplier'),
             'table' => $this->read_cart()
@@ -169,7 +169,7 @@ class Pembelian extends CI_Controller
         }
 
         $data = [
-            'title' => 'Detail Pembelian ' . $id,
+            'title' => 'Detail Barang Masuk' . $id,
             'data' => $getData
         ];
 
@@ -293,10 +293,10 @@ class Pembelian extends CI_Controller
         }
 
         $data = [
-            'title' => 'Edit Data Pembelian',
+            'title' => 'Edit Data Masuk',
             'fdata' => $fData,
             'data' => $this->m_pembelian->getData('tbl_barang', ['active' => 'Y']),
-            'supplier' => $this->m_pembelian->getAllData('tbl_supplier'),
+            /* 'supplier' => $this->m_pembelian->getAllData('tbl_supplier'), */
             'table' => $this->read_cart()
         ];
 
@@ -580,7 +580,7 @@ class Pembelian extends CI_Controller
                 $row[] = $no;
                 $row[] = $i->id_pembelian;
                 $row[] = $this->tanggal_indo($i->tgl_pembelian);
-                $row[] = $i->nama_supplier;
+                /*  $row[] = $i->nama_supplier; */
                 $row[] = $i->jumlah;
                 $row[] = '<span class="pr-3">' . number_format($i->total, 0, ',', '.') . ',-</span>';
                 $row[] = $i->fullname;
