@@ -24,7 +24,7 @@
         </div>
     </div>
 
-    <!-- <div class="form-group row">
+    <<div class="form-group row">
         <label for="supplier" class="col-sm-2 col-form-label">Supplier</label>
         <div class="col-sm-6">
             <select class="custom-select custom-select-sm supplier <?= (form_error('supplier')) ? 'is-invalid' : ''; ?>" id="supplier" name="supplier">
@@ -44,65 +44,65 @@
                 <?= form_error('supplier', '<p class="error-message">', '</p>'); ?>
             </div>
         </div>
-    </div> -->
+</div> -->
 
-    <div class="form-group row">
-        <label for="barangx" class="col-sm-2 col-form-label">Barang</label>
-        <div class="col-sm-6">
-            <select class="custom-select custom-select-sm barang-select" id="barangx">
-                <option value="" disabled selected>Pilih Barang</option>
-                <?php foreach ($data->result() as $d) : ?>
-                    <option value="<?= $d->kode_barang; ?>">
-                        <?= $d->nama_barang . ' ( ' . $d->brand . ' )'; ?>
-                    </option>
-                <?php endforeach; ?>
-            </select>
+<div class="form-group row">
+    <label for="barangx" class="col-sm-2 col-form-label">Barang</label>
+    <div class="col-sm-6">
+        <select class="custom-select custom-select-sm barang-select" id="barangx">
+            <option value="" disabled selected>Pilih Barang</option>
+            <?php foreach ($data->result() as $d) : ?>
+                <option value="<?= $d->kode_barang; ?>">
+                    <?= $d->nama_barang . ' ( ' . $d->brand . ' )'; ?>
+                </option>
+            <?php endforeach; ?>
+        </select>
+    </div>
+</div>
+<div class="form-group row">
+    <label for="jumlahx" class="col-sm-2 col-form-label">Qty</label>
+    <div class="col-sm-2">
+        <input type="number" class="form-control form-control-sm" id="jumlahx" placeholder="Qty">
+    </div>
+</div>
+<div class="form-group row">
+    <label for="harga" class="col-sm-2 col-form-label">Harga Satuan</label>
+    <div class="col-sm-3">
+        <input type="text" class="form-control form-control-sm uang" id="harga" placeholder="Harga Satuan">
+    </div>
+</div>
+<div class="form-group row">
+    <div class="col-sm-3 offset-sm-2">
+        <div id="rowid-field"></div>
+        <div id="btn-act">
+            <button type="button" class="btn btn-success btn-sm" onclick="tambah_cart()">Tambah Barang</button>
         </div>
     </div>
-    <div class="form-group row">
-        <label for="jumlahx" class="col-sm-2 col-form-label">Qty</label>
-        <div class="col-sm-2">
-            <input type="number" class="form-control form-control-sm" id="jumlahx" placeholder="Qty">
-        </div>
-    </div>
-    <div class="form-group row">
-        <label for="harga" class="col-sm-2 col-form-label">Harga Satuan</label>
-        <div class="col-sm-3">
-            <input type="text" class="form-control form-control-sm uang" id="harga" placeholder="Harga Satuan">
-        </div>
-    </div>
-    <div class="form-group row">
-        <div class="col-sm-3 offset-sm-2">
-            <div id="rowid-field"></div>
-            <div id="btn-act">
-                <button type="button" class="btn btn-success btn-sm" onclick="tambah_cart()">Tambah Barang</button>
-            </div>
-        </div>
-    </div>
-    <div class="table-responsive">
-        <table class="table table-sm table-hover table-striped">
-            <thead class="thead-dark">
-                <tr>
-                    <th scope="col">No</th>
-                    <th scope="col">Nama Barang</th>
-                    <th scope="col" class="text-center">Qty</th>
-                    <th scope="col" class="text-right">Harga</th>
-                    <th scope="col" class="text-right">Total</th>
-                    <th scope="col" class="text-center">Opsi</th>
-                </tr>
-            </thead>
-            <tbody id="daftar-beli">
-                <?= $table; ?>
-            </tbody>
-        </table>
-    </div>
-    <div class="col-sm-4 offset-sm-8">
-        <button type="submit" name="submit" class="btn btn-primary btn-sm" value="Update">
-            <i class="fa fa-save"></i> Simpan Perubahan Data
-        </button>
-        <button type="button" onclick="window.location.replace('<?= site_url('data_pembelian'); ?>')" class="btn btn-light btn-sm">
-            Kembali
-        </button>
-    </div>
+</div>
+<div class="table-responsive">
+    <table class="table table-sm table-hover table-striped">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">No</th>
+                <th scope="col">Nama Barang</th>
+                <th scope="col" class="text-center">Qty</th>
+                <th scope="col" class="text-right">Harga</th>
+                <th scope="col" class="text-right">Total</th>
+                <th scope="col" class="text-center">Opsi</th>
+            </tr>
+        </thead>
+        <tbody id="daftar-beli">
+            <?= $table; ?>
+        </tbody>
+    </table>
+</div>
+<div class="col-sm-4 offset-sm-8">
+    <button type="submit" name="submit" class="btn btn-primary btn-sm" value="Update">
+        <i class="fa fa-save"></i> Simpan Perubahan Data
+    </button>
+    <button type="button" onclick="window.location.replace('<?= site_url('data_pembelian'); ?>')" class="btn btn-light btn-sm">
+        Kembali
+    </button>
+</div>
 </div>
 <?= form_close(); ?>
