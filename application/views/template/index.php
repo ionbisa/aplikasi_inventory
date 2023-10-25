@@ -23,6 +23,8 @@
     <link rel="stylesheet" href="<?= base_url('assets/css/select2.min.css'); ?>">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="<?= base_url('assets/css/style.css'); ?>">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="img">
     <style>
         body {
             font-family: Roboto;
