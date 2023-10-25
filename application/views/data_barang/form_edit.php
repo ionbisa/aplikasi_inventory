@@ -31,7 +31,7 @@
     </div>
 
     <div class="form-group row">
-        <label for="brand" class="col-sm-3 col-form-label">Satuan</label>
+        <label for="brand" class="col-sm-3 col-form-label">Ukuran</label>
         <div class="col-sm-6">
             <input type="text" class="form-control form-control-sm <?= (form_error('brand')) ? 'is-invalid' : ''; ?>" id="brand" name="brand" placeholder="Satuan" value="<?= (set_value('brand')) ? set_value('brand') : $barang->brand; ?>">
             <div class="invalid-feedback">

@@ -1,7 +1,9 @@
-<?php defined('BASEPATH') or exit('No direct script access allowed'); ?>
+<?php defined('BASEPATH') or exit('No direct script access allowed');
+?>
 
 <img src="<?= base_url('assets/img/logo.png'); ?>" class="logo" />
-<h6 class="display-5 text-center mt-2 mb-0">Laporan Bulanan Stok Barang</h6>
+<h6 class="display-5 text-center mt-2 mb-0"><b>PT. Dash Garment Indoensia</b></h6>
+<h6 class="display-6 text-center mt-2 mb-0">Laporan Bulanan Stok Barang</h6>
 <p class="text-center display-6 mt-0"><?= 'Bulan ' . ucwords($bulan) . ' Tahun ' . $tahun; ?></p>
 <hr class="mt-0" />
 <table class="table table-sm table-bordered table-striped mt-3">
@@ -41,10 +43,9 @@
         }
         ?>
     </tbody>
-    
+
 </table>
 <br>
-<p class="text-right display-6 mt-0"><?= 'Bandung, ' . ucwords($bulan) . '  ' . $tahun; ?></p>
+
 <br><br><br>
 <p class="text-right display-6 mt-1"><b>( Manager Operasional )</b></p>
-

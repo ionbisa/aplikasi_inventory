@@ -52,7 +52,7 @@ function tanggal_indo()
     </p>
     <hr>
     <h4 class="alert-heading">
-        <i class="fa fa-info-circle"></i> <b>Sistem Inventory.</b>
+        <i class="fa fa-solid fa-circle-s"></i> <b>PT. Dash Garment Indoensia</b>
     </h4>
     <p class="mb-5" style="font-size: 16px;">Selamat Datang <b><?= $this->session->userdata('User'); ?></b>
         anda login dengan level <b><?= ucfirst($this->session->userdata('level')); ?></b>

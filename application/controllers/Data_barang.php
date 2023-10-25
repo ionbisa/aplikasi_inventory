@@ -286,7 +286,7 @@ class Data_barang extends CI_Controller
                 $row[] = '<span class="float-left">Rp.</span><span class="float-right">' . number_format($i->harga, 0, ',', '.') . ',-</span>';
                 $row[] = ($i->active == 'Y') ? 'Aktif' : 'Tidak Aktif';
                 $row[] = '<a href="' . site_url('edit_barang/' . $i->kode_barang) . '" class="btn btn-warning btn-sm text-white">Edit</a>
-                <button type="button" class="btn btn-danger btn-sm"onclick="hapus_barang(\'' . $i->kode_barang . '\')">Hapus</button>';
+                <button type="button" class="btn btn-danger btn-sm" onclick="hapus_barang(\'' . $i->kode_barang . '\')">Hapus</button>';
 
                 $data[] = $row;
             }

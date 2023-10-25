@@ -112,9 +112,11 @@
         <div class="footer">
             <p>
                 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                Copyright &copy;<script>
-                    document.write(new Date().getFullYear());
-                </script> | Aplikasi Stok Barang <i class="fa fa-heart" aria-hidden="true"></i> by <a href="#" target="_blank">ionbisa</a>
+
+                <a href="#"> Just Keep Moving | <script>
+                        document.write(new Date().getFullYear());
+                    </script></a>
+                <i class="fa fa-heart" aria-hidden="true"></i> by <a href="#" target="_blank">DASH.ID</a>
                 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
             </p>
         </div>

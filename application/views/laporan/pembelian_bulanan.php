@@ -70,12 +70,12 @@ if ($this->session->flashdata('alert')) {
 <table class="table table-sm table-bordered mt-3">
     <thead class="thead-dark">
         <tr>
-            <th scope="col">No</th>
-            <th scope="col">Tanggal</th>
-            <th scope="col">ID Barang Masuk</th>
-            <th scope="col">Nama Supplier</th>
+            <th scope="col" class="text-center">No</th>
+            <th scope="col" class="text-center">Tanggal</th>
+            <th scope="col" class="text-center">ID Barang Masuk</th>
+            <!-- <th scope="col">Nama Supplier</th> -->
             <th scope="col">Nama Barang</th>
-            <th scope="col">Satuan</th>
+            <th scope="col" class="text-center">Ukuran</th>
             <th scope="col" class="text-center">Qty</th>
             <th scope="col" class="text-center">Harga</th>
             <th scope="col" class="text-center">Total</th>
@@ -99,12 +99,12 @@ if ($this->session->flashdata('alert')) {
                 if ($row_pembelian == 1) :
 
                     echo '<td rowspan="' . $dt->row_pembelian . '">' . $dt->id_pembelian . '</td>';
-                    echo '<td rowspan="' . $dt->row_pembelian . '">' . $dt->nama_supplier . '</td>';
+                /* echo '<td rowspan="' . $dt->row_pembelian . '">' . $dt->nama_supplier . '</td>'; */
                 endif;
                 echo '<td>' . $dt->nama_barang . '</td>';
-                echo '<td>' . $dt->brand . '</td>';
-                echo '<td>' . $dt->qty . '</td>';
-                echo '<td><span class="float-left">Rp.</span><span class="float-right">' . number_format($dt->harga, 0, ',', '.') . '</span></td>';
+                echo '<td class="text-center">' . $dt->brand . '</td>';
+                echo '<td class="text-center">' . $dt->qty . '</td>';
+                echo '<td class="text-center"><span class="float-left">Rp.</span><span class="float-right">' . number_format($dt->harga, 0, ',', '.') . '</span></td>';
                 echo '<td><span class="float-left">Rp.</span><span class="float-right">' . number_format(($dt->harga * $dt->qty), 0, ',', '.') . '</span></td>';
                 echo '</tr>';
                 if ($row_pembelian != $dt->row_pembelian) {
@@ -123,7 +123,7 @@ if ($this->session->flashdata('alert')) {
             }
 
             echo '<tr>';
-            echo '<td colspan="8" class="text-center"><b>Total Biaya</b></td>';
+            echo '<td colspan="8" class="text-right"><b>Total </b></td>';
             echo '<td><b><span class="float-left">Rp.</span><span class="float-right">' . number_format($total, 0, ',', '.') . '</span></b></td>';
             echo '</tr>';
         } else {

@@ -100,7 +100,7 @@ class Pembelian extends CI_Controller
                     //kosongkan cart
                     $this->cart->destroy();
                     //buat notifikasi penyimpanan berhasil
-                    /* $this->session->set_flashdata('success', 'Data pembelian berhasil ditambahkan...'); */
+                    $this->session->set_flashdata('success', 'Data pembelian berhasil ditambahkan...');
 
                     redirect('data_pembelian');
                 }

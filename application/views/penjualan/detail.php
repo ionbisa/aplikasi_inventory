@@ -34,7 +34,7 @@ function tanggal_indo($tgl)
             <th scope="col">#</th>
             <th scope="col">Kode Barang</th>
             <th scope="col">Nama Barang</th>
-            <th scope="col">Satuan</th>
+            <th scope="col">Ukuruan</th>
             <th scope="col">Qty</th>
             <th scope="col">Harga Satuan</th>
             <th scope="col">Harga Total</th>

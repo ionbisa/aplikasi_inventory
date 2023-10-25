@@ -16,7 +16,7 @@
             font-family: Roboto;
             color: #4d4d4d;
             background: #f9813a;
-            background-image:url(assets/img/bg.jpg);
+            background-image: url(assets/img/bg.jpg);
         }
 
         .jumbotron {
@@ -54,8 +54,8 @@
         <div class="row">
             <div class="col-md-12 col-sm-12 text-center mt-5 mb-3">
                 <img src="<?= base_url('assets/img/login_1.png'); ?>" class="login" />
-                <h4 class="text-white mt-2">Sistem Permintaan Barang</h4>
-                <h3 class="text-white mt-2">PT. MITRA STANIA PRIMA </h3>
+                <h4 class="text-white mt-2">Sistem Inventory Dash.id</h4>
+                <h3 class="text-white mt-2">PT. Dash Garment Indoensia </h3>
 
 
                 <?php
@@ -94,9 +94,9 @@
                     <div class="clearfix"></div>
                     <?= form_close(); ?>
                 </div>
-                <p class="text-white text-center">Copyright &copy; <script>
+                <p class="text-white text-center">Just Keep Moving &copy; <script>
                         document.write(new Date().getFullYear());
-                    </script> All rights reserved
+                    </script>
                 </p>
             </div>
         </div>
